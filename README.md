@@ -32,4 +32,4 @@ Start time: 20:18
 
 Finish time: 21:22
 
-Actual time needed to complete: ____
+Actual time needed to complete: 1.5 hours
