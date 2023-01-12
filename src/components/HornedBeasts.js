@@ -30,7 +30,7 @@ class HornedBeasts extends React.Component {
         <Card.Body>
           <Card.Title>{this.props.title}</Card.Title>
           <Card.Text>{this.props.description}</Card.Text>
-          <p>{this.state.isFavorite ? `❤️:${this.state.numberOfFavorites}` : `🖤:${this.state.numberOfFavorites}`}</p>
+          <p>{this.state.isFavorite ? `❤️ : ${this.state.numberOfFavorites}` : `🖤 : ${this.state.numberOfFavorites}`}</p>
         </Card.Body>     
       </Card>
     );
