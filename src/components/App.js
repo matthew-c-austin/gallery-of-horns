@@ -8,9 +8,7 @@ class App extends React.Component{
     return(
       <>
         <Header />
-        <main>
-          <Main />
-        </main>
+        <Main />
         <Footer />
       </>
     )
