@@ -5,11 +5,11 @@ import data from "../data.json";
 class Main extends React.Component {
   render() {
     return(
-      data.map((beast) => (
-        <React.Fragment key={beast._id}>
-        <HornedBeasts {...beast}/>
-        </React.Fragment>
-      ))
+      <main>
+      {data.map((beast) => (
+        <HornedBeasts key={beast._id} {...beast}/>
+      ))}
+      </main>
     );
   }
 }
