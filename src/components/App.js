@@ -1,7 +1,7 @@
 import React from 'react';
 import data from '../data.json';
 import Header from './Header';
-import Main from './Main.jsx';
+import Main from './Main';
 import Footer from './Footer';
 import SelectedBeast from './SelectedBeast';
 
