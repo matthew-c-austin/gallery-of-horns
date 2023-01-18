@@ -28,8 +28,8 @@ class App extends React.Component{
   handleCloseSelectedBeast = () => {
     this.setState({
       showSelectedBeast: false,
-    })
-  }
+    });
+  };
 
   render(){
     return(
