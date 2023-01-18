@@ -17,7 +17,7 @@ class HornedBeasts extends React.Component {
       numberOfFavorites: (prevState.isFavorite ? prevState.numberOfFavorites - 1 : prevState.numberOfFavorites + 1)
     }));
     this.props.handleShowSelectedBeast(this.props.title, this.props.image_url, this.props.description);
-  }
+  };
 
   render() {
     return(
