@@ -1,7 +1,7 @@
 import React from 'react';
 import data from '../data.json';
 import Header from './Header';
-import Main from './Main';
+import Main from './Main.jsx';
 import Footer from './Footer';
 import SelectedBeast from './SelectedBeast';
 
@@ -35,8 +35,9 @@ class App extends React.Component{
     return(
       <>
         <Header />
-        <Main 
-          data={data}           handleShowSelectedBeast={this.handleShowSelectedBeast}/>
+        <Main
+          data={data}
+          handleShowSelectedBeast={this.handleShowSelectedBeast}/>
         <Footer />
         <SelectedBeast
           show={this.state.showSelectedBeast}

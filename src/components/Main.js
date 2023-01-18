@@ -7,7 +7,7 @@ class Main extends React.Component {
     return(
       <main>
         {this.props.data.map((beast) => (
-          <HornedBeasts 
+          <HornedBeasts
             handleShowSelectedBeast={this.props.handleShowSelectedBeast}
             key={beast._id} {...beast}
           />
