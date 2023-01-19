@@ -9,6 +9,7 @@ class App extends React.Component{
   constructor(props) {
     super(props);
     this.state = {
+      hornedBeastData: data,
       showSelectedBeast: false,
       selectedBeastTitle: '',
       selectedBeastImg: '',
@@ -31,13 +32,30 @@ class App extends React.Component{
     });
   };
 
+  updateHornedBeastData = (e) => {
+    e.preventDefault();
+    const numberOfHorns = e.target.value;
+    let updatedHornedBeastData = [];
+
+    if (numberOfHorns === 'Any') {
+      updatedHornedBeastData = data;
+    } else {
+      updatedHornedBeastData = data.filter(beast => beast.horns === Number(numberOfHorns));
+    }
+
+    this.setState({
+      hornedBeastData: updatedHornedBeastData
+    });
+  };
+
   render(){
     return(
       <>
         <Header />
         <Main
-          data={data}
-          handleShowSelectedBeast={this.handleShowSelectedBeast}/>
+          data={this.state.hornedBeastData}
+          handleShowSelectedBeast={this.handleShowSelectedBeast}
+          updateHornedBeastData={this.updateHornedBeastData}/>
         <Footer />
         <SelectedBeast
           show={this.state.showSelectedBeast}
