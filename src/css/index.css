@@ -19,11 +19,11 @@ code {
   gap: 2rem;
 }
 
-main {
+.card-gallery {
   display: flex;
   flex-wrap: wrap;
   gap: 3rem;
-  justify-content: space-evenly;
+  justify-content: center;
 }
 
 h1 {
